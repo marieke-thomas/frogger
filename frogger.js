@@ -84,6 +84,8 @@ window.onkeydown = function(e) {
        frogX -= 10
    }else if (key == 39){
        frogX += 10
+   } else if (key == 32){
+       frogY -= 40
    }
 }
 

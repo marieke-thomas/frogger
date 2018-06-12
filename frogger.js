@@ -1,7 +1,8 @@
 console.log("linked")
 
 function setup(){
-    createCanvas(800,600)
+    createCanvas(800,600);
+    // canvas.parent('gameDiv');
 }
 
 var frogX = 375
@@ -16,6 +17,12 @@ var bus2X = 1200
 function draw(){
     background(220);
     strokeWeight(2)
+    //roads
+    noStroke()
+    fill(100)
+    rect(0,440,800,70)
+    rect(0,290,800,70)
+    rect(0,90,800,70)
     // green frog
     stroke(0,130,0)
     fill(0,255,0)
@@ -113,12 +120,16 @@ function reset(){
 
 function lose(){
     reset()
+    winLose.classList.add("lose")
+    winLose.classList.remove("win")
     winLose.innerHTML += "You have been squashed. "
 }
 
 
 
 function win(){
+    winLose.classList.add("win")
+    winLose.classList.remove("lost")
     winLose.innerHTML= "You win! You are the best frog. "
     //how can I make the cars go away?
 }

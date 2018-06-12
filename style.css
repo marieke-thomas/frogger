@@ -1,0 +1,44 @@
+body {
+    font-family: Arial;
+    /*display: flex;*/
+    /*justify-content: center;*/
+    background-color: green;
+}
+
+h1{
+    text-align: center;
+    color: #00ff00;
+    text-shadow: 1px 1px #008200;
+}
+
+p {
+    color: #008200;
+}
+
+#wrapper{
+    background-color:white;
+    width: 900px;
+    max-width: 90%;
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin:auto;
+}
+
+/*How can I center the game?*/
+
+#winLose {
+    font-size: 20;
+    /*text-shadow: 0 0 4px yellow;*/
+    margin: auto;
+    text-align: center;
+    padding-bottom:10px;
+}
+
+.lose {
+    color: red;
+}
+
+.win {
+    color: blue;
+}
